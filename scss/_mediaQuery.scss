@@ -1,0 +1,189 @@
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 90vh;
+    .container__infoGame {
+      width: 100%;
+      height: 100%;
+    }
+    .container__starGame {
+      background-color: transparent;
+      width: 100%;
+      // height: 95%;
+      .logobook {
+        img {
+          width: 200px;
+        }
+      }
+      .screenStart {
+        .screenStart__msj {
+          width: 80%;
+          h2 {
+            font-size: 0.8em;
+          }
+        }
+        .cardsDinaTeo {
+          // flex-direction: column;
+          gap: 5px;
+          .cardDina {
+            width: 150px;
+            height: 150px;
+            .faceDina {
+              .imgDina__Msj {
+                width: 100px;
+                bottom: -45px;
+                left: -20px;
+              }
+              .numberRandom {
+                font-size: 3em;
+              }
+            }
+          }
+          .cardDina--reduceSize {
+            width: 110px;
+            height: 110px;
+          }
+          .cardTeo {
+            width: 150px;
+            height: 150px;
+            .faceTeo {
+              .imgTeo__Msj {
+                width: 100px;
+                bottom: -45px;
+                right: -20px;
+              }
+              .letterRandom {
+                font-size: 3em;
+              }
+            }
+          }
+          .cardteo--reduceSize {
+            width: 110px;
+            height: 110px;
+          }
+        }
+        .msjGame {
+          width: 80%;
+          h2 {
+            font-size: 0.9em;
+          }
+        }
+        .options {
+          gap: 2px;
+          .optionsCards {
+            width: 65px;
+            height: 90px;
+            font-size: 0.8em;
+          }
+        }
+      }
+      .container__endGame {
+        .starContainer {
+          gap: 5px;
+          .imgStartsGame {
+            width: 30px;
+          }
+        }
+      }
+    }
+
+    .endGame--hide {
+      width: 280px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 90vh;
+    .container__infoGame {
+      width: 100%;
+      height: 100%;
+    }
+    .container__starGame {
+      background-color: transparent;
+      width: 100%;
+      // height: 95%;
+      .logobook {
+        img {
+          width: 250px;
+        }
+      }
+      .screenStart {
+        .screenStart__msj {
+          width: 80%;
+          h2 {
+            font-size: 1em;
+          }
+        }
+        .cardsDinaTeo {
+          // flex-direction: column;
+          gap: 15px;
+          .cardDina {
+            width: 170px;
+            height: 170px;
+            .faceDina {
+              .imgDina__Msj {
+                width: 110px;
+                bottom: -50px;
+                left: -50px;
+              }
+              .numberRandom {
+                font-size: 3em;
+              }
+            }
+          }
+          .cardDina--reduceSize {
+            width: 130px;
+            height: 130px;
+          }
+          .cardTeo {
+            width: 170px;
+            height: 170px;
+            .faceTeo {
+              .imgTeo__Msj {
+                width: 110px;
+                bottom: -50px;
+                right: -50px;
+              }
+              .letterRandom {
+                font-size: 3em;
+              }
+            }
+          }
+          .cardteo--reduceSize {
+            width: 130px;
+            height: 130px;
+          }
+        }
+        .msjGame {
+          width: 80%;
+          h2 {
+            font-size: 1em;
+          }
+        }
+        .options {
+          gap: 5px;
+          .optionsCards {
+            width: 80px;
+            height: 100px;
+            font-size: 0.8em;
+          }
+        }
+      }
+      .container__endGame {
+        .starContainer {
+          gap: 10px;
+          .imgStartsGame {
+            width: 30px;
+          }
+        }
+      }
+    }
+
+    .endGame--hide {
+      width: 280px;
+    }
+  }
+}

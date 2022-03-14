@@ -1,0 +1,277 @@
+.container__starGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  height: 90vh;
+  // margin: auto;
+  // display: none;
+  transition: all 3s ease;
+  background: rgba(245, 243, 242, 0.774);
+  border-radius: 20px;
+  .logobook {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 250px;
+      transition: all 1s ease;
+    }
+    // clase añadida por js metodo reduce
+    .logobook--reduceSize {
+      width: 200px;
+    }
+  }
+  .screenStart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 1s ease;
+    .screenStart__msj {
+      @include msj;
+    }
+    .screenStart__msj--display {
+      display: none;
+    }
+    /* INICIO CONTENEDOR TARJETAS TEO */
+
+    .cardsDinaTeo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      .cardDina {
+        @include cardDinaTeo;
+        .faceDina {
+          @include faceDinaTeo;
+
+          .imgDina__Msj {
+            position: absolute;
+            width: 130px;
+            bottom: -55px;
+            left: -40px;
+          }
+          .numberRandom {
+            font-size: 5em;
+          }
+        }
+        .front {
+          transform: perspective(1000px) rotateY(0deg);
+          animation: scaleDina 1s 2;
+          &:hover {
+            background-color: $color-book-second;
+          }
+
+          @keyframes scaleDina {
+            0% {
+              scale: (1);
+            }
+            50% {
+              scale: (1.05);
+            }
+          }
+        }
+        .back {
+          transform: perspective(1000px) rotateY(180deg);
+          background-color: aliceblue;
+          color: $color--optionDinaTeo;
+        }
+        .rotarDina {
+          transform: perspective(1000px) rotateY(180deg);
+        }
+        .mostrarDina {
+          transform: perspective(1000px) rotateY(360deg);
+        }
+      }
+      .cardDina--reduceSize {
+        @include reduceDinaTeo;
+      }
+      .cardTeo {
+        @include cardDinaTeo;
+        .faceTeo {
+          @include faceDinaTeo;
+          .imgTeo__Msj {
+            display: none;
+          }
+          .imgTeo__Msj--see {
+            display: block;
+            position: absolute;
+            width: 130px;
+            bottom: -55px;
+            right: -40px;
+          }
+          .letterRandom {
+            font-size: 5em;
+          }
+        }
+        .front {
+          transform: perspective(1000px) rotateY(0deg);
+          &:hover {
+            background-color: $color-book-second;
+          }
+        }
+        .back {
+          transform: perspective(1000px) rotateY(180deg);
+          background-color: aliceblue;
+          color: $color--optionDinaTeo;
+        }
+        .rotarTeo {
+          transform: perspective(1000px) rotateY(180deg);
+        }
+        .mostrarTeo {
+          transform: perspective(1000px) rotateY(360deg);
+        }
+      }
+      .cardteo--reduceSize {
+        @include reduceDinaTeo;
+      }
+    }
+    /* FIN CONTENEDOR TARJETAS TEO */
+    /* INICIO MENSAJE DOS */
+    .msjGame {
+      @include msj;
+    }
+    /* FIN MENSAJE DOS */
+    /* INICIO CONTENEDOR TARJETAS OPCIONES*/
+    .optionsHide {
+      display: none;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      transition: all 2s ease;
+
+      .optionsCards {
+        position: relative;
+        width: 100px;
+        height: 120px;
+        cursor: pointer;
+
+        border-radius: 10px 10px 15px 15px;
+        transition: all 3s ease;
+        .optionsFront {
+          @include optionFrontBack;
+        }
+        .optionsBack {
+          @include optionFrontBack;
+          background-color: $color--AnswerIncorret;
+          color: $white;
+          font-size: 3.5em;
+        }
+        .optionsBack--true {
+          background-color: $color--AnswerCorret;
+          color: $white;
+          font-size: 3.5em;
+        }
+        .optionsBack--false {
+          background-color: $color--AnswerIncorret;
+          color: $white;
+          font-size: 3em;
+        }
+      }
+      .optionsFront {
+        transform: perspective(1000px) rotateY(0deg);
+        &:hover {
+          background-color: $color-book-second;
+        }
+      }
+      .optionsBack {
+        transform: perspective(1000px) rotateY(180deg);
+        background-color: aliceblue;
+      }
+      .rotarfront {
+        transform: perspective(1000px) rotateY(180deg);
+      }
+      .mostrarBack {
+        transform: perspective(1000px) rotateY(360deg);
+      }
+    }
+  }
+  .screenStart--active {
+    display: none;
+  }
+}
+
+.container__starGame--Focus {
+  display: none;
+}
+
+.dinaContainerActivo {
+  display: none;
+}
+
+.teoContainerActivo {
+  display: none;
+}
+
+.correct {
+  filter: invert(25%) sepia(91%) saturate(3663%) hue-rotate(122deg)
+    brightness(94%) contrast(104%);
+  animation: moveTopStart 1000ms linear infinite;
+}
+
+.wrong {
+  filter: invert(150%) sepia(90%) saturate(1239%) hue-rotate(336deg)
+    brightness(118%) contrast(100%);
+  animation: moveTopStart 1000ms linear infinite;
+}
+
+.regular {
+  animation: moveTopScore 1000ms linear infinite;
+  filter: sepia(57%) saturate(1877%) hue-rotate(356deg) brightness(104%)
+    contrast(97%) drop-shadow(15px 8px 8px #a9a9aa);
+}
+
+.bueno {
+  animation: moveTopScore 1000ms linear infinite;
+  filter: sepia(57%) saturate(1877%) hue-rotate(356deg) brightness(104%)
+    contrast(97%) drop-shadow(15px 8px 8px #a9a9aa);
+}
+
+@keyframes moveTopStart {
+  from {
+    filter: invert(25%) sepia(91%) saturate(2018%) hue-rotate(94deg)
+      brightness(94%) contrast(104%);
+  }
+  to {
+    transform: rotateZ(360deg);
+    filter: invert(44%) sepia(40%) saturate(898%) hue-rotate(71deg)
+      brightness(88%) contrast(90%);
+    transform: scale(0.1);
+  }
+}
+
+@keyframes moveTopStart {
+  0% {
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+  50% {
+    transform: translateY(-2px);
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+}
+
+@keyframes moveTopScore {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

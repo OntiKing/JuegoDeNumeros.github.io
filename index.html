@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__infoGame" id="container__infoGame">
+        <div class="acesLogo">
+          <img src="img/logoAces.svg" alt="" />
+        </div>
+        <div class="infoGame">
+          <div class="bookImg">
+            <img src="img/supercurioso3.png" alt="" />
+          </div>
+          <div class="detailsGame">
+            <div class="detail">
+              <h1 class="detail__title" id="title"></h1>
+              <h2 class="detail__capitulo" id="chapter"></h2>
+              <h3 class="detail__consigna" id="instructions"></h3>
+              <!-- <p class="detail__numberQuestion">
+                Number of questions:
+                <span id="textNumbersQuestions"> 10 </span>
+              </p> -->
+            </div>
+            <div class="buttonStar">
+              <div class="infoBtn__star" id="infoBtn__star">
+                <span id="starGameText"> START </span>
+                <img id="starGameImg" src="img/btn_play.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAR GAME -->
+      <div class="container__starGame" id="container__starGame">
+        <div class="logobook">
+          <img id="logobook--reduceSize" src="img/logo.svg" alt="" />
+        </div>
+        <div class="screenStart" id="screenStart">
+          <div class="screenStart__msj" id="screenStart__msj">
+            <h2 class="msjDinaTeo"></h2>
+          </div>
+          <!-- AQUI CONTENEDOR TARJETAS TEO Y DINA-->
+          <div class="cardsDinaTeo" id="cardsDinaTeo">
+            <div class="cardDina" id="cardDina">
+              <!-- parte delantera -->
+              <div class="faceDina front" id="frontDina">
+                <img class="imgDina" src="img/dina.svg" alt="" />
+                <img class="imgDina__Msj" src="img/el numero es.png" alt="">
+              </div>
+              <!-- parte trasera -->
+              <div class="faceDina back" id="backDina">
+                <h2 class="numberRandom" id="numberRandom"></h2>
+              </div>
+            </div>
+            <div class="cardTeo" id="cardTeo">
+              <!-- parte delantera -->
+              <div class="faceTeo front" id="frontTeo">
+                <img class="imgTeo" src="img/teo.svg" alt="" />
+                <img class="imgTeo__Msj" id="imgTeo__Msj" src="img/la posición es.png" alt="">
+              </div>
+              <!-- parte trasera -->
+              <div class="faceTeo back" id="backTeo">
+                <h2 class="letterRandom" id="letterRandom"></h2>
+              </div>
+            </div>
+          </div>
+          <!-- Mensaje dos -->
+          <div id="msjGame">
+            <h2 class="msjGameText" id="msjGameText"></h2>
+          </div>
+          <!-- AQUI CONTENEDOR DE OPCIONES -->
+          <div class="optionsHide" id="options">
+            <div class="optionsCards" id="optionsCards">
+              <!-- parte delantera -->
+              <div class="optionsFront one frontOne" id="frontOne">
+                <img class = 'oneImg' src="img/lupa-logo.svg" alt="" />
+              </div>
+              <!-- parte trasera -->
+              <div class="optionsBack one backOne" id="backOne">
+                <h2 class="numberRandom" id="onePositionNumber">0</h2>
+              </div>
+            </div>
+            <!-- tarjeta dos -->
+            <div class="optionsCards" id="optionsCards">
+              <!-- parte delantera -->
+              <div class="optionsFront two frontTwo" id="frontTwo">
+                <img class = 'twoImg' src="img/lupa-logo.svg" alt="" />
+              </div>
+              <!-- parte trasera -->
+              <div class="optionsBack two backTwo" id="backTwo">
+                <h2 class="number" id="twoPositionNumber">0</h2>
+              </div>
+            </div>
+            <!-- tarjeta tres -->
+            <div class="optionsCards" id="optionsCards">
+              <!-- parte delantera -->
+              <div class="optionsFront three frontThree" id="frontThree">
+                <img class = 'threeImg' src="img/lupa-logo.svg" alt="" />
+              </div>
+              <!-- parte trasera -->
+              <div class="optionsBack three backThree" id="backThree">
+                <h2 class="numberRandom" id="threePositionNumber">0</h2>
+              </div>
+            </div>
+            <!-- tarjeta cuatro -->
+            <div class="optionsCards" id="optionsCards">
+              <!-- parte delantera -->
+              <div class="optionsFront four frontFour" id="frontFour">
+                <img class="fourImg" src="img/lupa-logo.svg" alt="" />
+              </div>
+              <!-- parte trasera -->
+              <div class="optionsBack four backFour" id="backFour">
+                <h2 class="numberRandom" id="fourPositionNumber">0</h2>
+              </div>
+            </div>
+            <!-- tarjeta cinco -->
+            <div class="optionsCards" id="optionsCards">
+              <!-- parte delantera -->
+              <div class="optionsFront five frontFive" id="frontFive">
+                <img class="fiveImg" src="img/lupa-logo.svg" alt="" />
+              </div>
+              <!-- parte trasera -->
+              <div class="optionsBack five backFive" id="backFive">
+                <h2 class="numberRandom" id="fivePositionNumber">0</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container__endGame " id="container__endGame">
+        <div class="textEndGame textEndGame--hide" id="textEndGame">
+          <h2>Tu puntaje</h2>
+
+        </div>
+        <div  id="scoreContent">
+          <span class="score" id="score"></span>
+          <img class="imgScore" src="img/estrella.svg" alt="" id="imgTotalScore">
+          <!-- <Button id="actulizar">Actualizar</Button> -->
+         </div>
+         
+        <div class="starContainer starContainer--activo" id="starContainer">
+         
+        </div>
+        <div class="btnRefrech btnRefrech--hide" id="btnRefrech">
+          <button class="btnActualizar" id="btnRefrech">Volver a Jugar </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- END GAME -->
+    
+    <!-- </div>
+    <div class="cards__dinaTeo wrap" id="cards__dinaTeo">
+      
+      <button class="card__dina tarjeta dina" id="img">
+        <div class="dinaFront" id="dinaContainer">
+          <img class="dina" src="img/dina.svg" alt="" />
+        
+        </div>
+        <div class="dinaBack">
+          <h1 class="numAleatoreo" id="numAleatoreo">HOLA</h1>
+        </div>
+      </button>
+     
+      <button class="card__teo tarjeta teo" id="img">
+        <div class="teoFront" id="teoContainer">
+          <img class="teo" src="img/teo.svg" alt="" />
+          
+        </div>
+        <div class="teoBack">
+          <h1 class="letterAleatoreo" id="letterAleatoreo">1kkk</h1>
+        </div>
+      </button>
+    </div> -->
+  </body>
+  <script src="script/sounds.js"></script>
+  <script src="script/starts.js"></script>
+  <script src="script/post.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/infoBtn.js"></script>
+  <script src="script/starGame.js"></script>
+  <script src="script/cardsOptions.js"></script>
+  <script src="script/cardsOptionsContainer.js"></script>
+</html>

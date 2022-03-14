@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  background: url(/img/background.svg) no-repeat center top fixed;
+  background-size: cover;
+  font-family: montserratB;
+}

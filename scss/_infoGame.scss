@@ -1,0 +1,80 @@
+.hideInfoGame {
+  display: none;
+}
+
+.container__infoGame {
+  width: 90%;
+  height: 800px;
+  overflow: hidden;
+  margin: auto;
+  display: none;
+  .acesLogo {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    img {
+      height: 100px;
+    }
+  }
+  .infoGame {
+    width: 80%;
+    margin: auto;
+    background: $color--backgroundGame;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .bookImg {
+      margin: 50px 0;
+      width: 250px;
+      img {
+        border-radius: 10px;
+      }
+    }
+    .detailsGame {
+      text-align: center;
+      padding: 0 30px;
+      .detail {
+        h2 {
+          margin: 5px 0 50px 0;
+          color: $color-primary;
+          font-weight: 300;
+        }
+        h3 {
+          font-weight: 400;
+          font-size: 1.2em;
+          margin: 40px 0 60px 0;
+        }
+      }
+      .buttonStar {
+        text-align: center;
+        width: 100%;
+
+        .infoBtn__star {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          width: 50%;
+          border-radius: 5px;
+          padding: 15px;
+          margin: auto;
+          background-color: $color-primary;
+          transition: all 0.3s ease;
+          &:hover {
+            cursor: pointer;
+            background-color: $color-second;
+          }
+          span {
+            color: $white;
+          }
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

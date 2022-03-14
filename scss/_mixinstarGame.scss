@@ -1,0 +1,80 @@
+@mixin msj {
+  text-align: center;
+  background-color: $color-book-primary;
+  margin: 40px auto 5px auto;
+  padding: 10px;
+  width: 50%;
+  border: 5px solid $color-book-primary-dark;
+  border-radius: 20px 25px 25px 30px;
+  transform: rotateZ(-0.1deg);
+  h2 {
+    color: $white;
+    font-size: 1.2em;
+    span {
+      display: inline-block;
+      transform: translate(0);
+      padding: 0 5px;
+      color: $color-dinaTeo;
+      animation: skip 1s infinite;
+    }
+    @keyframes skip {
+      0% {
+        transform: rotate(0 deg);
+      }
+      50% {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+
+@mixin cardDinaTeo {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+@mixin faceDinaTeo {
+  background-color: $color-book-hover;
+  // border: 3px solid $color-book-primary;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 65%;
+  }
+}
+
+@mixin optionFrontBack {
+  background-color: $color-book-hover;
+  // border: 3px solid $color-book-primary;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+
+  img {
+    width: 50%;
+  }
+}
+
+@mixin reduceDinaTeo {
+  width: 150px;
+  height: 150px;
+}
