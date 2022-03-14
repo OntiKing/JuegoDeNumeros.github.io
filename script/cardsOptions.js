@@ -140,7 +140,7 @@ const resetOptions = () => {
       rotateTeo();
       setTimeout(() => {
         postToTurnDinaGame();
-      }, 1000);
+      }, 100);
 
       countChance = 1;
       activeContainerCards = 0;

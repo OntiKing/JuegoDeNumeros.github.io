@@ -30,5 +30,8 @@ $infoBtn.addEventListener("click", screenActive);
 
 function screenActive() {
   $container__infoGame.classList.add("hideInfoGame");
-  $container__starGame.classList.add("seeStarGame");
+  document
+    .querySelector(".container__starGame")
+    .classList.remove("container__starGame--Focus");
+  soundAmbient.play();
 }

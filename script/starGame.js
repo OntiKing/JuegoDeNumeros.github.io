@@ -18,14 +18,14 @@ $cardsDinaTeo.addEventListener("click", (e) => {
   if (e.target.matches(".faceDina") || e.target.matches(".imgDina")) {
     if (activarCardDina === 0) {
       soundEffect.play();
-
       rotateDina();
-
       activarCardDina = 1;
       activarCardTeo = 1;
       setTimeout(() => {
         if (numbersQuestions >= 2) {
           postToTurnTeoGame();
+        } else {
+          postTurnTeo();
         }
       }, 200);
     }

@@ -7,7 +7,7 @@
   height: 800px;
   overflow: hidden;
   margin: auto;
-  display: none;
+
   .acesLogo {
     width: 100%;
     text-align: center;
@@ -30,7 +30,12 @@
       margin: 50px 0;
       width: 250px;
       img {
+        width: 220px;
         border-radius: 10px;
+        transition: all 1s ease;
+        &:hover {
+          scale: (1.1);
+        }
       }
     }
     .detailsGame {
