@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   margin: auto;
   display: -webkit-box;
@@ -286,13 +286,13 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardDina {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   cursor: pointer;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -317,6 +317,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina img {
@@ -387,8 +388,8 @@ body {
 
 .container__starGame .screenStart .cardsDinaTeo .cardTeo {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   cursor: pointer;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -885,18 +886,57 @@ body {
 @media (max-width: 500px) {
   .container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
   }
   .container .container__infoGame {
     width: 100%;
     height: 100%;
   }
+  .container .container__infoGame .acesLogo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container .container__infoGame .acesLogo img {
+    width: 100px;
+  }
+  .container .container__infoGame .infoGame {
+    width: 85%;
+  }
+  .container .container__infoGame .infoGame .bookImg {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .container .container__infoGame .infoGame .bookImg img {
+    width: 130px;
+  }
+  .container .container__infoGame .detailsGame .detail {
+    width: 100%;
+  }
+  .container .container__infoGame .detailsGame .detail h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  .container .container__infoGame .detailsGame .detail h3 {
+    margin: 0;
+  }
+  .container .container__infoGame .detailsGame .buttonStar {
+    margin: 20px auto;
+  }
+  .container .container__infoGame .detailsGame .buttonStar .infoBtn__star {
+    padding: 10px;
+    width: 70%;
+  }
   .container .container__starGame {
-    background-color: transparent;
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100vh;
+    gap: 0px;
+  }
+  .container .container__starGame .logobook {
     width: 100%;
   }
   .container .container__starGame .logobook img {
-    width: 200px;
+    width: 150px;
   }
   .container .container__starGame .screenStart .screenStart__msj {
     width: 80%;
@@ -905,11 +945,12 @@ body {
     font-size: 0.8em;
   }
   .container .container__starGame .screenStart .cardsDinaTeo {
-    gap: 5px;
+    margin-top: 10px;
+    gap: 20px;
   }
   .container .container__starGame .screenStart .cardsDinaTeo .cardDina {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
   .container .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina .imgDina__Msj {
     width: 100px;
@@ -924,8 +965,8 @@ body {
     height: 110px;
   }
   .container .container__starGame .screenStart .cardsDinaTeo .cardTeo {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
   .container .container__starGame .screenStart .cardsDinaTeo .cardTeo .faceTeo .imgTeo__Msj {
     width: 100px;
@@ -949,94 +990,12 @@ body {
     gap: 2px;
   }
   .container .container__starGame .screenStart .options .optionsCards {
-    width: 65px;
+    width: 63px;
     height: 90px;
     font-size: 0.8em;
   }
   .container .container__starGame .container__endGame .starContainer {
     gap: 5px;
-  }
-  .container .container__starGame .container__endGame .starContainer .imgStartsGame {
-    width: 30px;
-  }
-  .container .endGame--hide {
-    width: 280px;
-  }
-}
-
-@media (max-width: 800px) {
-  .container {
-    width: 100%;
-    height: 90vh;
-  }
-  .container .container__infoGame {
-    width: 100%;
-    height: 100%;
-  }
-  .container .container__starGame {
-    background-color: transparent;
-    width: 100%;
-  }
-  .container .container__starGame .logobook img {
-    width: 250px;
-  }
-  .container .container__starGame .screenStart .screenStart__msj {
-    width: 80%;
-  }
-  .container .container__starGame .screenStart .screenStart__msj h2 {
-    font-size: 1em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo {
-    gap: 15px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina {
-    width: 170px;
-    height: 170px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina .imgDina__Msj {
-    width: 110px;
-    bottom: -50px;
-    left: -50px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina .numberRandom {
-    font-size: 3em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina--reduceSize {
-    width: 130px;
-    height: 130px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo {
-    width: 170px;
-    height: 170px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo .faceTeo .imgTeo__Msj {
-    width: 110px;
-    bottom: -50px;
-    right: -50px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo .faceTeo .letterRandom {
-    font-size: 3em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardteo--reduceSize {
-    width: 130px;
-    height: 130px;
-  }
-  .container .container__starGame .screenStart .msjGame {
-    width: 80%;
-  }
-  .container .container__starGame .screenStart .msjGame h2 {
-    font-size: 1em;
-  }
-  .container .container__starGame .screenStart .options {
-    gap: 5px;
-  }
-  .container .container__starGame .screenStart .options .optionsCards {
-    width: 80px;
-    height: 100px;
-    font-size: 0.8em;
-  }
-  .container .container__starGame .container__endGame .starContainer {
-    gap: 10px;
   }
   .container .container__starGame .container__endGame .starContainer .imgStartsGame {
     width: 30px;

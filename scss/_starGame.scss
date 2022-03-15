@@ -44,11 +44,13 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 50px;
+
       .cardDina {
         @include cardDinaTeo;
         .faceDina {
           @include faceDinaTeo;
+          z-index: 1000;
 
           .imgDina__Msj {
             position: absolute;
