@@ -1,0 +1,70 @@
+@media (min-width: 400px) {
+  .container__starGame {
+    .screenStart {
+      .options {
+        .optionsCards {
+          width: 70px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .container__starGame {
+    .screenStart {
+      .cardsDinaTeo {
+        flex-direction: row;
+        gap: 40px;
+        .cardDina--reduceSize {
+          width: 120px;
+          height: 120px;
+        }
+        .cardteo--reduceSize {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .msjGame {
+        width: 60%;
+      }
+      .options {
+        gap: 10px;
+        .optionsCards {
+          width: 90px;
+          height: 110px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container__starGame {
+    .screenStart {
+      .cardsDinaTeo {
+        flex-direction: row;
+        gap: 40px;
+        .cardDina--reduceSize {
+          width: 120px;
+          height: 120px;
+        }
+        .cardteo--reduceSize {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .msjGame {
+        width: 60%;
+      }
+      .options {
+        gap: 10px;
+        .optionsCards {
+          width: 90px;
+          height: 110px;
+        }
+      }
+    }
+  }
+}

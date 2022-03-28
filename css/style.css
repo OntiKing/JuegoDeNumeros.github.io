@@ -109,10 +109,14 @@ body {
   padding: 0 15px;
 }
 
+.container__infoGame .infoGame .detailsGame .detail h1 {
+  font-weight: 700;
+}
+
 .container__infoGame .infoGame .detailsGame .detail h2 {
   margin: 10px;
   color: #00b7bd;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .container__infoGame .infoGame .detailsGame .detail h3 {
@@ -231,7 +235,7 @@ body {
   text-align: center;
   background-color: #e84e0f;
   margin: 30px auto 5px auto;
-  width: 95%;
+  width: 75%;
   border: 5px solid #df3e08;
   border-radius: 20px 25px 25px 30px;
   -webkit-transform: rotateZ(-0.1deg);
@@ -241,7 +245,7 @@ body {
 .container__starGame .screenStart .screenStart__msj h2 {
   color: #fff;
   font-size: 0.9em;
-  padding: 5px 0;
+  padding: 5px 10px;
   font-weight: 400;
 }
 
@@ -285,14 +289,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 60px;
 }
 
@@ -479,13 +485,17 @@ body {
 .container__starGame .screenStart .cardsDinaTeoGapreduce {
   gap: 10px;
   margin: 20px 0 10px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container__starGame .screenStart .msjGame {
   text-align: center;
   background-color: #e84e0f;
   margin: 30px auto 5px auto;
-  width: 95%;
+  width: 75%;
   border: 5px solid #df3e08;
   border-radius: 20px 25px 25px 30px;
   -webkit-transform: rotateZ(-0.1deg);
@@ -495,7 +505,7 @@ body {
 .container__starGame .screenStart .msjGame h2 {
   color: #fff;
   font-size: 0.9em;
-  padding: 5px 0;
+  padding: 5px 10px;
   font-weight: 400;
 }
 
@@ -534,8 +544,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 2px;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -543,12 +551,12 @@ body {
 
 .container__starGame .screenStart .options .optionsCards {
   position: relative;
-  width: 60px;
-  height: 90px;
   cursor: pointer;
   border-radius: 10px 10px 15px 15px;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
+  width: 60px;
+  height: 90px;
 }
 
 .container__starGame .screenStart .options .optionsCards .optionsFront {
@@ -886,7 +894,7 @@ body {
   padding: 10px 0;
   border-radius: 10px;
   border: none;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #fff;
   cursor: pointer;
 }
@@ -897,5 +905,68 @@ body {
 
 .btnRefrech--hide {
   display: none;
+}
+
+@media (min-width: 400px) {
+  .container__starGame .screenStart .options .optionsCards {
+    width: 70px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container__starGame .screenStart .cardsDinaTeo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+  }
+  .container__starGame .screenStart .cardsDinaTeo .cardDina--reduceSize {
+    width: 120px;
+    height: 120px;
+  }
+  .container__starGame .screenStart .cardsDinaTeo .cardteo--reduceSize {
+    width: 120px;
+    height: 120px;
+  }
+  .container__starGame .screenStart .msjGame {
+    width: 60%;
+  }
+  .container__starGame .screenStart .options {
+    gap: 10px;
+  }
+  .container__starGame .screenStart .options .optionsCards {
+    width: 90px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container__starGame .screenStart .cardsDinaTeo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+  }
+  .container__starGame .screenStart .cardsDinaTeo .cardDina--reduceSize {
+    width: 120px;
+    height: 120px;
+  }
+  .container__starGame .screenStart .cardsDinaTeo .cardteo--reduceSize {
+    width: 120px;
+    height: 120px;
+  }
+  .container__starGame .screenStart .msjGame {
+    width: 60%;
+  }
+  .container__starGame .screenStart .options {
+    gap: 10px;
+  }
+  .container__starGame .screenStart .options .optionsCards {
+    width: 90px;
+    height: 110px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

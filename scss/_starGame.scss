@@ -40,9 +40,10 @@
 
     .cardsDinaTeo {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+
       gap: 60px;
 
       .cardDina {
@@ -135,6 +136,7 @@
     .cardsDinaTeoGapreduce {
       gap: 10px;
       margin: 20px 0 10px 0;
+      flex-direction: row;
     }
     /* FIN CONTENEDOR TARJETAS TEO */
     /* INICIO MENSAJE DOS */
@@ -150,18 +152,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+
       gap: 2px;
       transition: all 2s ease;
 
       .optionsCards {
         position: relative;
-        width: 60px;
-        height: 90px;
         cursor: pointer;
-
         border-radius: 10px 10px 15px 15px;
         transition: all 3s ease;
+        width: 60px;
+        height: 90px;
         .optionsFront {
           @include optionFrontBack;
         }
