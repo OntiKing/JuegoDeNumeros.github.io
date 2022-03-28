@@ -138,6 +138,9 @@ const reduceAndShowCardsOptions = () => {
     .classList.add("logobook--reduceSize");
   document.getElementById("cardDina").classList.add("cardDina--reduceSize");
   document.getElementById("cardTeo").classList.add("cardteo--reduceSize");
+  document
+    .getElementById("cardsDinaTeo")
+    .classList.add("cardsDinaTeoGapreduce");
 
   setTimeout(() => {
     // Oculta el mensaje incial de Dina y Teo

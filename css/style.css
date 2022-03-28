@@ -14,7 +14,7 @@
 
 body {
   overflow-x: hidden;
-  background: url(/img/background.svg) no-repeat center top fixed;
+  background: url(../img/background.svg) no-repeat center top fixed;
   background-size: cover;
   font-family: montserratB;
 }
@@ -48,55 +48,56 @@ body {
           align-items: center;
 }
 
-.hideInfoGame {
-  display: none;
-}
-
 .container__infoGame {
-  width: 90%;
-  height: 800px;
-  overflow: hidden;
-  margin: auto;
-}
-
-.container__infoGame .acesLogo {
   width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.container__infoGame .acesLogo img {
-  height: 100px;
-}
-
-.container__infoGame .infoGame {
-  width: 80%;
-  margin: auto;
-  background: rgba(250, 246, 242, 0.699);
-  border-radius: 50px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  gap: 20px;
 }
 
-.container__infoGame .infoGame .bookImg {
-  margin: 50px 0;
-  width: 250px;
+.container__infoGame .acesLogo img {
+  height: 70px;
+}
+
+.container__infoGame .infoGame {
+  width: 95%;
+  padding: 20px 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container__infoGame .infoGame .bookImg img {
-  width: 220px;
+  width: 130px;
   border-radius: 10px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .container__infoGame .infoGame .bookImg img:hover {
@@ -105,19 +106,19 @@ body {
 
 .container__infoGame .infoGame .detailsGame {
   text-align: center;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .container__infoGame .infoGame .detailsGame .detail h2 {
-  margin: 5px 0 50px 0;
+  margin: 10px;
   color: #00b7bd;
   font-weight: 300;
 }
 
 .container__infoGame .infoGame .detailsGame .detail h3 {
   font-weight: 400;
-  font-size: 1.2em;
-  margin: 40px 0 60px 0;
+  font-size: 1em;
+  margin: 20px 0 60px 0;
 }
 
 .container__infoGame .infoGame .detailsGame .buttonStar {
@@ -136,13 +137,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  width: 50%;
+  width: 80%;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
   margin: auto;
   background-color: #00b7bd;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .container__infoGame .infoGame .detailsGame .buttonStar .infoBtn__star:hover {
@@ -156,6 +159,10 @@ body {
 
 .container__infoGame .infoGame .detailsGame .buttonStar .infoBtn__star img {
   width: 30px;
+}
+
+.hideInfoGame {
+  display: none;
 }
 
 .container__starGame {
@@ -173,12 +180,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  width: 80%;
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
-  background: rgba(245, 243, 242, 0.774);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .container__starGame .logobook {
@@ -187,7 +193,7 @@ body {
 }
 
 .container__starGame .logobook img {
-  width: 250px;
+  width: 170px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -224,9 +230,8 @@ body {
 .container__starGame .screenStart .screenStart__msj {
   text-align: center;
   background-color: #e84e0f;
-  margin: 40px auto 5px auto;
-  padding: 10px;
-  width: 50%;
+  margin: 30px auto 5px auto;
+  width: 95%;
   border: 5px solid #df3e08;
   border-radius: 20px 25px 25px 30px;
   -webkit-transform: rotateZ(-0.1deg);
@@ -235,7 +240,9 @@ body {
 
 .container__starGame .screenStart .screenStart__msj h2 {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 0.9em;
+  padding: 5px 0;
+  font-weight: 400;
 }
 
 .container__starGame .screenStart .screenStart__msj h2 span {
@@ -286,13 +293,13 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardDina {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 160px;
+  height: 160px;
   cursor: pointer;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -382,14 +389,15 @@ body {
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardDina--reduceSize {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  font-size: 0.7em;
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardTeo {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 160px;
+  height: 160px;
   cursor: pointer;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -463,16 +471,21 @@ body {
 }
 
 .container__starGame .screenStart .cardsDinaTeo .cardteo--reduceSize {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  font-size: 0.7em;
+}
+
+.container__starGame .screenStart .cardsDinaTeoGapreduce {
+  gap: 10px;
+  margin: 20px 0 10px 0;
 }
 
 .container__starGame .screenStart .msjGame {
   text-align: center;
   background-color: #e84e0f;
-  margin: 40px auto 5px auto;
-  padding: 10px;
-  width: 50%;
+  margin: 30px auto 5px auto;
+  width: 95%;
   border: 5px solid #df3e08;
   border-radius: 20px 25px 25px 30px;
   -webkit-transform: rotateZ(-0.1deg);
@@ -481,7 +494,9 @@ body {
 
 .container__starGame .screenStart .msjGame h2 {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 0.9em;
+  padding: 5px 0;
+  font-weight: 400;
 }
 
 .container__starGame .screenStart .msjGame h2 span {
@@ -521,15 +536,15 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 2px;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
 .container__starGame .screenStart .options .optionsCards {
   position: relative;
-  width: 100px;
-  height: 120px;
+  width: 60px;
+  height: 90px;
   cursor: pointer;
   border-radius: 10px 10px 15px 15px;
   -webkit-transition: all 3s ease;
@@ -586,7 +601,7 @@ body {
   font-size: 1em;
   background-color: #f88163;
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2.2em;
 }
 
 .container__starGame .screenStart .options .optionsCards .optionsBack img {
@@ -596,13 +611,13 @@ body {
 .container__starGame .screenStart .options .optionsCards .optionsBack--true {
   background-color: #00a3a6;
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2.2em;
 }
 
 .container__starGame .screenStart .options .optionsCards .optionsBack--false {
   background-color: #f88163;
   color: #fff;
-  font-size: 3em;
+  font-size: 2.2em;
 }
 
 .container__starGame .screenStart .options .optionsFront {
@@ -756,7 +771,7 @@ body {
 }
 
 .container__endGame {
-  margin: 0 auto 0 auto;
+  margin: 30px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,6 +786,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 35px;
+  width: 100%;
 }
 
 .container__endGame .textEndGame {
@@ -817,7 +833,7 @@ body {
 }
 
 .container__endGame .scoreContent span {
-  font-size: 4em;
+  font-size: 3em;
   z-index: 10;
   -webkit-animation: moveTopScore 1000ms linear infinite;
           animation: moveTopScore 1000ms linear infinite;
@@ -834,11 +850,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .container__endGame .starContainer img {
-  width: 35px;
+  width: 30px;
 }
 
 .container__endGame .starContainer .imgStarsEnd {
@@ -854,7 +870,7 @@ body {
 }
 
 .endGame--hide {
-  width: 500px;
+  width: 95%;
   background-color: #fff;
 }
 
@@ -881,127 +897,5 @@ body {
 
 .btnRefrech--hide {
   display: none;
-}
-
-@media (max-width: 500px) {
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
-  .container .container__infoGame {
-    width: 100%;
-    height: 100%;
-  }
-  .container .container__infoGame .acesLogo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .container .container__infoGame .acesLogo img {
-    width: 100px;
-  }
-  .container .container__infoGame .infoGame {
-    width: 85%;
-  }
-  .container .container__infoGame .infoGame .bookImg {
-    text-align: center;
-    margin: 20px auto;
-  }
-  .container .container__infoGame .infoGame .bookImg img {
-    width: 130px;
-  }
-  .container .container__infoGame .detailsGame .detail {
-    width: 100%;
-  }
-  .container .container__infoGame .detailsGame .detail h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  .container .container__infoGame .detailsGame .detail h3 {
-    margin: 0;
-  }
-  .container .container__infoGame .detailsGame .buttonStar {
-    margin: 20px auto;
-  }
-  .container .container__infoGame .detailsGame .buttonStar .infoBtn__star {
-    padding: 10px;
-    width: 70%;
-  }
-  .container .container__starGame {
-    background-color: rebeccapurple;
-    width: 100%;
-    height: 100vh;
-    gap: 0px;
-  }
-  .container .container__starGame .logobook {
-    width: 100%;
-  }
-  .container .container__starGame .logobook img {
-    width: 150px;
-  }
-  .container .container__starGame .screenStart .screenStart__msj {
-    width: 80%;
-  }
-  .container .container__starGame .screenStart .screenStart__msj h2 {
-    font-size: 0.8em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo {
-    margin-top: 10px;
-    gap: 20px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina {
-    width: 180px;
-    height: 180px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina .imgDina__Msj {
-    width: 100px;
-    bottom: -45px;
-    left: -20px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina .faceDina .numberRandom {
-    font-size: 3em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardDina--reduceSize {
-    width: 110px;
-    height: 110px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo {
-    width: 180px;
-    height: 180px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo .faceTeo .imgTeo__Msj {
-    width: 100px;
-    bottom: -45px;
-    right: -20px;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardTeo .faceTeo .letterRandom {
-    font-size: 3em;
-  }
-  .container .container__starGame .screenStart .cardsDinaTeo .cardteo--reduceSize {
-    width: 110px;
-    height: 110px;
-  }
-  .container .container__starGame .screenStart .msjGame {
-    width: 80%;
-  }
-  .container .container__starGame .screenStart .msjGame h2 {
-    font-size: 0.9em;
-  }
-  .container .container__starGame .screenStart .options {
-    gap: 2px;
-  }
-  .container .container__starGame .screenStart .options .optionsCards {
-    width: 63px;
-    height: 90px;
-    font-size: 0.8em;
-  }
-  .container .container__starGame .container__endGame .starContainer {
-    gap: 5px;
-  }
-  .container .container__starGame .container__endGame .starContainer .imgStartsGame {
-    width: 30px;
-  }
-  .container .endGame--hide {
-    width: 280px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

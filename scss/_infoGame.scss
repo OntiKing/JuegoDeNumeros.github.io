@@ -1,38 +1,34 @@
-.hideInfoGame {
-  display: none;
-}
-
 .container__infoGame {
-  width: 90%;
-  height: 800px;
-  overflow: hidden;
-  margin: auto;
-
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   .acesLogo {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
     img {
-      height: 100px;
+      height: 70px;
     }
   }
   .infoGame {
-    width: 80%;
-    margin: auto;
-    background: $color--backgroundGame;
-    border-radius: 50px;
+    width: 95%;
+    padding: 20px 0;
+    // background: $color--backgroundGame;
+    border-radius: 15px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     .bookImg {
-      margin: 50px 0;
-      width: 250px;
       img {
-        width: 220px;
+        width: 130px;
         border-radius: 10px;
         transition: all 1s ease;
+        margin-bottom: 20px;
+
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
         &:hover {
           scale: (1.1);
         }
@@ -40,17 +36,17 @@
     }
     .detailsGame {
       text-align: center;
-      padding: 0 30px;
+      padding: 0 15px;
       .detail {
         h2 {
-          margin: 5px 0 50px 0;
+          margin: 10px;
           color: $color-primary;
           font-weight: 300;
         }
         h3 {
           font-weight: 400;
-          font-size: 1.2em;
-          margin: 40px 0 60px 0;
+          font-size: 1em;
+          margin: 20px 0 60px 0;
         }
       }
       .buttonStar {
@@ -62,12 +58,13 @@
           justify-content: center;
           align-items: center;
           gap: 15px;
-          width: 50%;
+          width: 80%;
           border-radius: 5px;
-          padding: 15px;
+          padding: 10px;
           margin: auto;
           background-color: $color-primary;
           transition: all 0.3s ease;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
           &:hover {
             cursor: pointer;
             background-color: $color-second;
@@ -82,4 +79,7 @@
       }
     }
   }
+}
+.hideInfoGame {
+  display: none;
 }

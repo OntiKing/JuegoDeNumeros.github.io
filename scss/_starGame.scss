@@ -4,18 +4,17 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 80%;
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
   // margin: auto;
   // display: none;
   transition: all 3s ease;
-  background: rgba(245, 243, 242, 0.774);
-  border-radius: 20px;
+  border-radius: 15px;
   .logobook {
     width: 100%;
     text-align: center;
     img {
-      width: 250px;
+      width: 170px;
       transition: all 1s ease;
     }
     // clase añadida por js metodo reduce
@@ -44,7 +43,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 60px;
 
       .cardDina {
         @include cardDinaTeo;
@@ -133,6 +132,10 @@
         @include reduceDinaTeo;
       }
     }
+    .cardsDinaTeoGapreduce {
+      gap: 10px;
+      margin: 20px 0 10px 0;
+    }
     /* FIN CONTENEDOR TARJETAS TEO */
     /* INICIO MENSAJE DOS */
     .msjGame {
@@ -148,13 +151,13 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 2px;
       transition: all 2s ease;
 
       .optionsCards {
         position: relative;
-        width: 100px;
-        height: 120px;
+        width: 60px;
+        height: 90px;
         cursor: pointer;
 
         border-radius: 10px 10px 15px 15px;
@@ -166,17 +169,17 @@
           @include optionFrontBack;
           background-color: $color--AnswerIncorret;
           color: $white;
-          font-size: 3.5em;
+          font-size: 2.2em;
         }
         .optionsBack--true {
           background-color: $color--AnswerCorret;
           color: $white;
-          font-size: 3.5em;
+          font-size: 2.2em;
         }
         .optionsBack--false {
           background-color: $color--AnswerIncorret;
           color: $white;
-          font-size: 3em;
+          font-size: 2.2em;
         }
       }
       .optionsFront {
