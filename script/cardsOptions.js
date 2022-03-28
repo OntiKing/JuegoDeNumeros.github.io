@@ -126,11 +126,11 @@ const resetOptions = () => {
           .getElementById("btnRefrech")
           .classList.toggle("btnRefrech--hide");
         document
-          .getElementById("container__endGame")
+          .getElementById("infoEngGame")
           .classList.toggle("endGame--hide");
         document
-          .getElementById("container__endGame")
-          .classList.toggle("container__endGame--border");
+          .getElementById("infoEngGame")
+          .classList.toggle("infoEngGame--border");
         soundAmbient.play();
       }, 1000);
 

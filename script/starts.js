@@ -2,7 +2,7 @@
 
 const $starContainer = document.getElementById("starContainer");
 const $scoreContent = document.getElementById("scoreContent");
-const totalQuestion = 8;
+const totalQuestion = 2;
 let currentQuestion = 0;
 let optionsUser = 0;
 
